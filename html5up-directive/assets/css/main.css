@@ -182,6 +182,12 @@ body {
     background: #ffffff;
 }
 
+body .fa-arrow-up {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+}
+
 body.is-preload *,
 body.is-preload *:before,
 body.is-preload *:after {
@@ -212,7 +218,6 @@ a {
     -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
     border-bottom: dotted 1px;
-    color: #4eb980;
     text-decoration: none;
 }
 
@@ -1833,6 +1838,7 @@ label {
 
 input[type="text"],
 input[type="password"],
+input[type="password-verify"],
 input[type="email"],
 select,
 textarea {
@@ -2518,7 +2524,7 @@ input[type="button"].small,
 }
 
 #header .logo {
-    background: #800000;
+    background: white;
     border-radius: 10px;
     color: black;
     cursor: default;
@@ -2552,17 +2558,12 @@ input[type="button"].small,
 
 #footer {
     background-attachment: scroll;
-    background-color: #4eb980;
+    background-color: darkgrey;
     background-image: url("images/bottom-3200.svg");
     background-position: top center;
     background-repeat: repeat-x;
     background-size: 3200px 460px;
     color: rgba(255, 255, 255, 0.8);
-    /*
-			Since the SVG background occupies a lot of vertical space, we'll
-			add additional top padding (to move our content out of its way)
-			and a negative margin (to move everything up a bit).
-		*/
     margin-top: -260px;
     padding: calc(460px + 6em) 0 10em 0;
     position: relative;
@@ -2582,6 +2583,7 @@ input[type="button"].small,
 
 #footer a {
     color: #ffffff;
+    width: 50px;
 }
 
 #footer strong,
@@ -2621,6 +2623,7 @@ input[type="button"].small,
 
 #footer input[type="text"]:focus,
 #footer input[type="password"]:focus,
+#footer input[type="password-verify"]:focus,
 #footer input[type="email"]:focus,
 #footer select:focus,
 #footer textarea:focus {
@@ -2669,6 +2672,9 @@ input[type="button"].small,
 /* Main */
 
 #main {
+    background-image: url("notepad.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 6em 0 5em 0;
     position: relative;
     z-index: 1;
