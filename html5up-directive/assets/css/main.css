@@ -182,12 +182,6 @@ body {
     background: #ffffff;
 }
 
-body .fa-arrow-up {
-    display: none;
-    position: fixed;
-    bottom: 50px;
-}
-
 body.is-preload *,
 body.is-preload *:before,
 body.is-preload *:after {
@@ -210,6 +204,16 @@ textarea {
     font-size: 16pt;
     font-weight: 400;
     line-height: 1.75em;
+}
+
+#back2Top {
+    width: 10px;
+    display: none;
+    bottom: 50px;
+    right: 50px;
+    position: fixed;
+    padding: 10px;
+    z-index: 99;
 }
 
 a {
