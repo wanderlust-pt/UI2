@@ -247,7 +247,7 @@ dl,
 table,
 blockquote,
 form {
-    margin: 0 0 2em 0;
+    margin: 2em 0 2em 0;
 }
 
 h1,
@@ -256,7 +256,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #5b5b5b;
+    font-language-override: color: #5b5b5b;
     font-weight: 700;
     letter-spacing: 0.125em;
     line-height: 1.75em;
@@ -2362,6 +2362,12 @@ input[type="button"].small,
     padding: 0;
 }
 
+.box video {
+    display: none;
+    margin-left: 20%;
+    width: 50%;
+}
+
 
 /* Feature */
 
@@ -2807,6 +2813,15 @@ input[type="button"].small,
     /* Main */
     #main {
         padding: 4em 0 3em 0;
+    }
+}
+
+
+/* video display */
+
+@media screen and (min-width: 980px) {
+    .box video {
+        display: inline;
     }
 }
 
