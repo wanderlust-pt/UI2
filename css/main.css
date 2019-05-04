@@ -387,6 +387,10 @@ blockquote {
     align-items: stretch;
 }
 
+.row #loginPage {
+    margin: auto;
+}
+
 .row>* {
     box-sizing: border-box;
 }
@@ -1969,7 +1973,7 @@ textarea {
     -webkit-transition: opacity 0.25s ease-in-out;
     -ms-transition: opacity 0.25s ease-in-out;
     transition: opacity 0.25s ease-in-out;
-    background-image: url("images/overlay.png");
+    background-image: url("../images/overlay.png");
     content: '';
     display: block;
     height: 100%;
@@ -2411,6 +2415,7 @@ input[type="button"].small,
 .feature h5,
 .feature h6 {
     text-align: inherit;
+    font-size: 1.5em;
 }
 
 .feature .image {
